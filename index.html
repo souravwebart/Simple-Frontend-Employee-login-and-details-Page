@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="home" class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 left">
+                    <div class="left-image">
+                        <img src="./images/contactimage.jpg" alt="contact">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 right">
+                    <div class="heading">
+                        <h2>Welcome back!</h2>
+                        <p>Please login to your account.</p>
+                    </div>
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control-contact" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control-contact" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-above-button">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            </div>
+                            <div class="forget-password">
+                                <a href="#">Forgot password</a>
+                            </div>
+                        </div>
+                        <button type="submit" class="loginbtn btn-primary">login</button>
+                    </form>
+                    <div class="form-footer">
+                        <p>Terms of use. Privacy policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="employeezone" class="employee">
+        <div class="container">
+            <div class="row">
+                <div class="employee-details">
+                    <div class="employee-heading">
+                        <h1>Employee Details</h1>
+                        <hr>
+                    </div>
+                    <div class="table-employee">
+                        <div class="table-responsive text-nowrap">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>SI No.</th>
+                                        <th>Name</th>
+                                        <th>Age</th>
+                                        <th>Gender</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Sourav Gupta</td>
+                                        <td>25</td>
+                                        <td>Male</td>
+                                        <td>example@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jhon Doe</td>
+                                        <td>29</td>
+                                        <td>Male</td>
+                                        <td>example@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Chamila Reddy</td>
+                                        <td>33</td>
+                                        <td>Female</td>
+                                        <td>example@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Sameer Kureshi</td>
+                                        <td>21</td>
+                                        <td>Male</td>
+                                        <td>example@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Ravi V</td>
+                                        <td>39</td>
+                                        <td>Male</td>
+                                        <td>example@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Ritchie Clarke</td>
+                                        <td>30</td>
+                                        <td>Feale</td>
+                                        <td>example@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>Suriya Kumar</td>
+                                        <td>26</td>
+                                        <td>Male</td>
+                                        <td>example@gmail.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $(".loginbtn").click(function () {
+                $('#home').hide();
+                $('#employeezone').show();
+            });
+        });
+    </script>
+</body>
+
+</html>
